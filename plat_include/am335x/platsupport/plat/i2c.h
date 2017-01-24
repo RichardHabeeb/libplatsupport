@@ -28,4 +28,6 @@ enum i2c_id {
     NI2C
 };
 
+int am335x_i2c_init(enum i2c_id id, i2c_bus_t* i2c);
+
 #endif /* _PLATSUPPORT_PLAT_I2C_H_ */

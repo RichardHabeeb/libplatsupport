@@ -16,4 +16,6 @@ enum i2c_id {
     NI2C
 };
 
+int omap4_i2c_init(void* base, i2c_bus_t* i2c);
+
 #endif /* _PLATSUPPORT_PLAT_I2C_H_ */

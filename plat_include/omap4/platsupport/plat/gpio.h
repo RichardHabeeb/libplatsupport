@@ -11,7 +11,13 @@
 #ifndef _OMAP4_GPIO_H
 #define _OMAP4_GPIO_H
 
+#include <platsupport/gpio.h>
+
 enum gpio_port {
+    GPIO_BANK0,
+    GPIO_BANK1,
+    GPIO_BANK2,
+    GPIO_BANK3,
     GPIO_NBANKS
 };
 

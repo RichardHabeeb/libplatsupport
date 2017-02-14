@@ -21,6 +21,6 @@ enum gpio_port {
     GPIO_NBANKS
 };
 
-int omap4_gpio_sys_init(void* bank0, void* bank1, void* bank2, void* bank3, gpio_sys_t* gpio_sys);
+int am335x_gpio_sys_init(void* bank0, void* bank1, void* bank2, void* bank3, gpio_sys_t* gpio_sys);
 
 #endif /* _AM335X_GPIO_H */

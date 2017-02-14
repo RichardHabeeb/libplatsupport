@@ -14,13 +14,7 @@
 #include <platsupport/gpio.h>
 
 enum gpio_port {
-    GPIO_BANK0,
-    GPIO_BANK1,
-    GPIO_BANK2,
-    GPIO_BANK3,
     GPIO_NBANKS
 };
-
-int omap4_gpio_sys_init(void* bank0, void* bank1, void* bank2, void* bank3, gpio_sys_t* gpio_sys);
 
 #endif /* _OMAP4_GPIO_H */

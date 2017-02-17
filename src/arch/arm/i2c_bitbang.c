@@ -9,7 +9,7 @@
  */
 
 /* To extend support, provide platform specific i2c.h and gpio.h and delay.c */
-#if defined(PLAT_EXYNOS5) || defined(PLAT_EXYNOS4) || defined(PLAT_IMX6)
+//#if defined(PLAT_EXYNOS5) || defined(PLAT_EXYNOS4) || defined(PLAT_IMX6) || defined(PLAT_AM335X)
 
 #include <platsupport/i2c.h>
 #include <platsupport/delay.h>
@@ -293,4 +293,4 @@ i2c_bb_init(gpio_sys_t* gpio_sys, gpio_id_t scl, gpio_id_t sda,
     return 0;
 }
 
-#endif
+//#endif

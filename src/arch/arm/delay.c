@@ -63,7 +63,8 @@ ps_udelay(unsigned long us)
 {
     if (cpufreq_hint == 0) {
         printf("%s:%d - Unable to determine CPU frequency for delay loop\n", __FILE__, __LINE__);
-        cpufreq_hint = 2 * 1000 * 1000 * 1000;
+        //cpufreq_hint = 2 * 1000 * 1000 * 1000;
+        cpufreq_hint = 1000000000UL;
     }
     while (us--) {
         ps_do_cycle_delay(CYCLES_PER_US);
@@ -75,4 +76,3 @@ ps_cpufreq_hint(unsigned long hz)
 {
     cpufreq_hint = hz;
 }
-

@@ -13,7 +13,7 @@
 #include <platsupport/mux.h>
 #include "../../services.h"
 
-#define GPIO_DEBUG
+//#define GPIO_DEBUG
 #ifdef GPIO_DEBUG
 #define DGPIO(...) printf("GPIO: " __VA_ARGS__)
 #else
